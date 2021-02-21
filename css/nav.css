@@ -1,0 +1,337 @@
+*{
+    z-index: 0;
+}
+#nav{
+    background:rgba(0, 0, 0);
+    border-bottom: 1px solid blue;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    z-index: 9;
+}
+.navbar-brand img{
+    border-radius: 0 20px 0 0;
+}
+.nav-item{
+    margin: 0 15px;
+}
+#nav *{
+    color: #fff !important;
+}
+.drop1:hover{
+    display: block;
+}
+.drop{
+    
+    position: fixed;
+    top: 50px;
+    left:-45vw;
+    background: rgba(0, 0, 0, 0.767);
+    color: #fff;
+    z-index: 10;
+    text-align: center;
+    border-radius: 10px;
+}
+.drop1{
+    position: fixed;
+    top: 50px;
+    left:-100% !important;
+    background: rgba(0, 0, 0, 0.767);
+    color: #fff;
+    z-index: 10;
+    text-align: center;
+    border-radius: 10px;
+}
+.drop a{
+    color:#fff !important;
+}
+.navbar-toggler{
+    background: #fff;
+}
+.drop a:hover{
+    color:rgb(53, 67, 255);
+    border-bottom: 2px #59b4f1 solid;
+}
+.drop .grid3{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.drop h3{
+    font-size: 1rem;
+}
+.drop .head{
+    background: rgb(207, 19, 19);
+    padding: 10px;
+    border-radius: 20px 0 0 0;
+    color: #333;
+}
+.drop .a1{
+    background-color: rgb(47, 247, 47);
+}
+.drop .a2{
+    background-color: rgb(52, 248, 238);
+}
+.drop .a3{
+    background-color: rgb(49, 49, 240);
+}
+.drop .a4{
+background: rgb(255, 192, 75);
+}
+.drop .grp{
+    padding: 0 15px;
+    min-width: 25vw;
+}
+.drop li{
+    padding: 10px;
+}
+#nav a:hover{
+    color: #f7fb0b !important;
+    font-weight: 600;
+}
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .carousel-item{
+        height: 60vh;
+    }
+    .drop .grid3 ,.about .grid,.itrain .grid2{
+        grid-template-columns: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    .about .grid img{
+        width: 300px;
+    }
+    .drop .grp{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 90vw;
+    }
+    .container1 .info{
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    #video, #video video{
+        width: 200%;
+    }
+    .post-module{
+        margin-bottom: 40px;
+    }
+    #welcome h1{
+        font-size: 2.5rem;
+    }
+    .navbar-brand img{
+        width: 300px;
+    }
+    #video2 h1, .itrain h1.display-4, .hdtop h1, .hire h1, #c{
+        font-size: 2.5rem;
+    }
+    #video2{
+        min-height: 45vh;
+    }
+    #video2 #myvideo{
+        width: 200%;
+    }
+    #popup{
+        min-width: 90vw;
+    }
+    .itrain .grid{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .itrain .icard{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .itrain .icard img{
+        width: 100%;
+    }
+    .itrain .icard.ic{
+        width: 65vw;
+    }
+    footer#footer .grid{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    footer#footer .grid > div{
+        border-bottom: 1px solid #fff !important;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    footer .maincon {
+        padding:120px 30px;
+    }
+ }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .drop .grid3{
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+    .itrain .grid2{
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+    .container1 .info{
+        grid-template-columns: auto;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .post-module{
+        margin-bottom: 40px;
+    }
+    .drop .grp{
+        padding: 0 15px;
+        min-width: 45vw;   
+    }
+    #video2 h1, .hdtop h1{
+        font-size: 3.5rem;
+    }
+    .hire h1{
+        font-size: 2.9rem;
+    }
+    #video2{
+        min-height: 50vh;
+    }
+    #video2 #myvideo{
+        width: 200%;
+    }
+    #popup{
+        min-width: 75vw;
+    }
+    .itrain .grid{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .about .grid{
+        grid-template-columns: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    .itrain .icard{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .itrain .icard img{
+        width: 100%;
+    }
+    footer#footer .grid{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    footer#footer .grid > div{
+        border-bottom: 1px solid #fff !important;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .drop .grp{
+        padding: 0 10px;
+        min-width: 32vw;   
+    }
+    .drop .grid3 ,.itrain .grid2{
+        grid-template-columns: auto auto auto;
+    }
+    .itrain .icard.ic{
+        width: 25vw;
+    }
+    #popup{
+        min-width: 60vw;
+    }
+    #video2 h1, .hdtop h1{
+        font-size: 4.5rem;
+    }
+    .hire h1{
+        font-size: 3.5rem;
+    }
+    #video2{
+        min-height: 60vh;
+    }
+    #video2 #myvideo{
+        width: 150%;
+    }
+    .itrain .grid{
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+    .itrain .icard{
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .itrain .icard img{
+        width: 100%;
+    }
+    footer#footer .grid{
+        grid-template-columns: 60% 35%;
+    }
+    footer#footer .grid > div{
+        border-bottom:0 !important;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .itrain .icard.ic{
+        width: 20vw;
+    }
+    #video2{
+        min-height: 60vh;
+    }
+    #video2 #myvideo{
+        width: 110%;
+    }
+    #popup{
+        min-width: 40vw;
+    }
+    .drop .grp{
+        padding: 0 15px;
+        min-width: 28vw;
+    }
+    .container1 .info{
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        margin-top: -140px;
+    }
+    .post-module{
+        margin-bottom: 0px;
+    }
+    .itrain .grid{
+        grid-template-columns: auto auto auto auto;
+    }
+    .itrain .icard{
+        width: 20vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer#footer .grid{
+        grid-template-columns: 40% 20% 20% 20%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .about .grid{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        justify-content: space-around;
+        text-align: left;
+    }
+    .container1 .info{
+        padding: 0 8vw;
+    }
+    .drop .grp{
+        padding: 0 15px;
+        min-width: 25vw;
+    }
+}
